@@ -1,0 +1,36 @@
+body {
+    background-image: url("components/images/borders.png");
+    background-repeat: repeat;
+}
+
+.main {
+    width: 100%;
+    background-color: #aaaaaa80;
+}
+.jumbotron {
+    text-align:center;
+    box-shadow: 0px 0px 10px grey;
+}
+.card-columns {
+    margin: 0px 100px;
+}
+.card {
+    text-align: center;
+    box-shadow: 0px 0px 10px grey;
+}
+
+@media screen and (max-width: 769px) {
+    .card-columns {
+        margin: 0px 20px;
+    }
+}
+@media screen and (max-width: 415px) {
+    .card-columns {
+        margin: 0px 25px;
+    }
+}
+@media screen and (max-width: 321px) {
+    .card-columns {
+        margin: 0px 25px;
+    }
+}

@@ -1,0 +1,211 @@
+h2 {
+    text-align: center;
+}
+h5 {
+    text-align: center;
+}
+
+.banner {
+    width: 100%;
+}
+
+.card {
+    text-align: center;
+}
+.card img {
+    height: 250px;
+}
+.card svg {
+    height: 250px;
+}
+
+.info {
+    background-color: #aaaaaa91;
+    box-shadow: 0px 0px 10px grey;
+}
+
+#about {
+    background-color: #aaaaaa;
+    padding: 20px 0px; 
+    box-shadow: 0px 0px 10px grey;
+}
+#about img {
+    animation: 1s zoomIn;
+    border-radius: 50%;
+    position: absolute;
+    right: 50px;
+}
+#about img:hover {
+    box-shadow: 5px 5px 25px grey;
+    width: 190px;
+    height: 190px;
+}
+#about h1 {
+    padding-top: 20px;
+}
+#about p {
+    line-height: 35px;
+    margin: 10px 250px;
+}
+
+#frameworks {
+    margin: 10px 250px;
+}
+#frameworks h1 {
+    margin: 10px 0px;
+}
+#frameworks .card {
+    opacity: 0;
+    border-radius: 10px;
+}
+
+#whyus {
+    background-color: #aaaaaa;
+    box-shadow: 0px 0px 10px grey;
+    margin: 25px 0px;
+    padding: 30px 0px;
+}
+#whyus .card-deck {
+    margin: 0px 175px;
+}
+#whyus .card {
+    opacity: 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px grey;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 10px
+}
+#whyus .card:hover {
+    box-shadow: 5px 10px 50px grey;
+}
+
+#reviews {
+    margin-left: 300px; margin-right: 300px; margin-bottom: 30px;
+    padding: 15px 50px; padding-bottom: 30px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px grey;
+    background-color: #bdbdbd65;
+}
+#reviews .circle {
+    margin: 0px 5px;
+    float: right;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #aaaaaa;
+}
+#reviews #grey:hover {
+    background-color: #929292;
+}
+#reviews #red:hover {
+    background-color: #af2525;
+}
+#reviews .card-deck {
+    margin-top: 25px;
+}
+#reviews .card {
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px grey;
+}
+
+#staff {
+    margin: 20px 300px;
+}
+#staff .card {
+    border-radius: 50px;
+}
+#staff .card .mini-round {
+    position: absolute;
+    top: 70px;
+    left: 40px;
+    width: 150px;
+    border-radius: 50%;
+    height: 150px;
+}
+#staff .card .card-img-top{
+    height: 200px;
+    filter: blur(1px);
+    border-radius: 50px;
+}
+
+@keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+}
+@media screen and (min-width: 1921px) {
+    #staff .card .mini-round {
+        display: none;
+    }
+    #staff .card .card-img-top {
+        filter: blur(0px);
+    }
+}
+@media screen and (max-width: 1919px) {
+    #staff .card .mini-round {
+        display: none;
+    }
+    #staff .card .card-img-top {
+        filter: blur(0px);
+    }
+}
+@media screen and (max-width: 1500px) {
+    #reviews {
+        margin: 0px 200px;
+    }
+    #frameworks {
+        margin: 0 100px;
+    }
+    #staff {
+        margin: 20px 150px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    #reviews {
+        margin: 0px 100px;
+    }
+    #frameworks {
+        margin: 0 10px;
+    }
+    #staff {
+        margin: 20px 50px;
+    }
+}
+@media screen and (max-width: 1400px) {
+    #whyus .card-deck {
+        margin: 0px 10px;
+    }
+}
+@media screen and (max-width: 900px) {
+    #about img {
+        right: 10px;
+    }
+}
+@media screen and (max-width: 769px) {
+    #about p {
+        margin: 0 15px;
+    }
+    #about img {
+        display: none;
+    }
+}
+@media screen and (max-width: 415px) {
+    #about p {
+        margin: 0 5px;
+    }
+    #about img {
+        display: none;
+    }
+    #reviews .circle {
+        display: none;
+    }
+    #reviews {
+        margin-left:20px;margin-right:20px;
+    }
+}
